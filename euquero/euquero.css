@@ -1,0 +1,119 @@
+:root {
+    --cora: #ffd6e0;
+    --corb: #7a2e57;
+    --corc: #d89eeb;
+    --cord: #e06b9e;
+    --core: #b361c9;
+}
+
+
+
+
+body {
+    background: linear-gradient(150deg, rgb(27 20 22), rgb(59 35 67), rgb(173 29 221));
+    min-height: 100vh;
+    margin: 0;
+    padding: 40px 10px;
+    font-family: 'Lora', serif;
+}
+
+.contenedor {
+    display: flex; /* Usa Flexbox para o layout */
+    justify-content: center;
+    margin: 0 auto; /* Centraliza o contêiner na página */
+    padding: 0px; /* Adiciona um pouco de espaço interno */
+}
+
+
+
+
+#carta1, #mensajeOculto {
+    font-family: sans-serif;
+    background: linear-gradient(160deg, #fffaf7, #fff1f6);
+    padding: 56px 48px;
+    border-radius: 28px;
+    border: 2px solid rgba(255, 255, 255, 0.7);
+    box-shadow: 0 0 60px rgba(255, 100, 150, 0.25), 0 10px 40px rgba(0, 0, 0, 0.12);
+    margin: 24px auto;
+    line-height: 1.3;
+    text-align: justify;
+    font-size: 16px;
+    color: #000000;
+    width: 90%;
+    max-width: 735px;
+    position: relative;
+    
+}
+
+#carta1 p,
+#mensajeOculto p {
+    text-indent: 2em;
+}
+
+#carta1:before, #carta1:after,#mensajeOculto:before, #mensajeOculto:after {
+    content: '♥'; /* Exemplo de conteúdo para os pseudo-elementos */
+    font-size: 34px;
+    color: #e0507e; /* Cor dos pseudo-elementos */
+    position: absolute;
+}
+
+#carta1:before,#mensajeOculto:before {
+    left: -10px; /* Posição do pseudo-elemento à esquerda */
+    top: -10px; /* Posição do pseudo-elemento superior */
+}
+
+#carta1:after, #mensajeOculto:after {
+    right: -10px; /* Posição do pseudo-elemento à direita */
+    bottom: -10px; /* Posição do pseudo-elemento inferior */
+}
+
+.imagem {
+    margin: 5px 0 0 0; /* Alinha a imagem ao topo e remove o alinhamento central */
+    width: 140px; /* Tamanho pequeno da imagem */
+    height: auto; /* Mantém a proporção da imagem */
+    border-radius: 30px; /* Arredonda os cantos da imagem */
+    position: relative;
+    top: 10px; /* Ajusta a posição da imagem para baixo */
+    left: 0; /* Move a imagem para o extremo esquerdo */
+}
+
+.print {
+    display: block;
+    width: 100%;
+    max-width: 663px;
+    height: auto;
+    margin: 41px auto 41px auto;
+    border-radius: 40px;
+    box-shadow: 17px 4px 28px rgba(0, 0, 0, 0.3);
+}
+
+.printpast {
+    display: block;
+    width: 88%;
+    max-width: 650px;
+    height: auto;
+    margin: 31px auto 35px auto;
+    border-radius: 16px;
+    box-shadow: 9px 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+button {
+    display: block;
+    margin: 28px auto 0;
+    padding: 14px 32px;
+    font-size: 1em;
+    font-weight: 600;
+    color: #7a4a1e;
+    background: linear-gradient(135deg, #ffe9c7, #ffd9a8);
+    border: none;
+    border-radius: 16px;
+    box-shadow: 0 4px 14px rgba(200, 130, 60, 0.3);
+    cursor: pointer;
+    transition: transform 0.15s ease;
+}
+
+button:hover {
+    transform: translateY(-2px);
+    color: #7a4a1e;
+    background: linear-gradient(135deg, #ffd9a8, #ffc98a);
+}
